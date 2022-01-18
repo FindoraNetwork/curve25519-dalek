@@ -306,12 +306,12 @@ pub mod traits;
 // Finite field arithmetic mod p = 2^255 - 19
 pub mod field;
 
+// Arithmetic backends (using u32, u64, etc) live here
+pub mod backend;
+
 //------------------------------------------------------------------------
 // curve25519-dalek internal modules
 //------------------------------------------------------------------------
-
-// Arithmetic backends (using u32, u64, etc) live here
-pub(crate) mod backend;
 
 // Crate-local prelude (for alloc-dependent features like `Vec`)
 pub(crate) mod prelude;
