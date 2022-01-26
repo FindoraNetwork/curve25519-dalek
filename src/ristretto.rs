@@ -211,6 +211,7 @@ use backend::vector::scalar_mul;
 ///
 /// The Ristretto encoding is canonical, so two points are equal if and
 /// only if their encodings are equal.
+#[derive(scale_info::TypeInfo)] // Added for Polymesh
 #[derive(Copy, Clone, Eq, PartialEq, Hash)]
 pub struct CompressedRistretto(pub [u8; 32]);
 
@@ -437,6 +438,7 @@ impl<'de> Deserialize<'de> for CompressedRistretto {
 /// operations on `RistrettoPoint`s are exactly as fast as operations on
 /// `EdwardsPoint`s.
 ///
+#[derive(scale_info::TypeInfo)] // Added for Polymesh
 #[derive(Copy, Clone)]
 pub struct RistrettoPoint(pub(crate) EdwardsPoint);
 
