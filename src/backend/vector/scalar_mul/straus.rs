@@ -18,8 +18,8 @@ use zeroize::Zeroizing;
 use backend::vector::{CachedPoint, ExtendedPoint};
 use edwards::EdwardsPoint;
 use scalar::Scalar;
-use window::{LookupTable, NafLookupTable5};
 use traits::{Identity, MultiscalarMul, VartimeMultiscalarMul};
+use window::{LookupTable, NafLookupTable5};
 
 #[allow(unused_imports)]
 use prelude::*;
