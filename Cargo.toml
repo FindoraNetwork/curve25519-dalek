@@ -54,7 +54,7 @@ zeroize = { version = "1", default-features = false }
 fiat-crypto = { version = "0.1.6", optional = true}
 
 # Polymesh diff:
-scale-info = { version = "1.0", default-features = false, features = ["derive"] }
+scale-info = { version = "2.0", default-features = false, features = ["derive"] }
 
 [features]
 nightly = ["subtle/nightly"]
