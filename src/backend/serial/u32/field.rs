@@ -49,6 +49,7 @@ use zeroize::Zeroize;
 ///
 /// The backend-specific type `FieldElement2625` should not be used
 /// outside of the `curve25519_dalek::field` module.
+#[derive(scale_info::TypeInfo)] // Added for Polymesh
 #[derive(Copy, Clone)]
 pub struct FieldElement2625(pub(crate) [u32; 10]);
 
