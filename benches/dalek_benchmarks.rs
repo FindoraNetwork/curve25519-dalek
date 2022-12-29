@@ -12,10 +12,10 @@ use criterion::BatchSize;
 use criterion::Criterion;
 use criterion::{BenchmarkGroup, BenchmarkId};
 
-extern crate curve25519_dalek;
+extern crate noah_curve25519_dalek;
 
-use curve25519_dalek::constants;
-use curve25519_dalek::scalar::Scalar;
+use noah_curve25519_dalek::constants;
+use noah_curve25519_dalek::scalar::Scalar;
 
 static BATCH_SIZES: [usize; 5] = [1, 2, 4, 8, 16];
 static MULTISCALAR_SIZES: [usize; 13] = [1, 2, 4, 8, 16, 32, 64, 128, 256, 384, 512, 768, 1024];

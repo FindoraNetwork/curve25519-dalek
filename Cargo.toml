@@ -19,9 +19,6 @@ exclude = [
 # rustdoc-args = ["--html-in-header", ".cargo/registry/src/github.com-1ecc6299db9ec823/curve25519-dalek-0.13.2/rustdoc-include-katex-header.html"]
 features = ["nightly", "simd_backend"]
 
-[badges]
-travis-ci = { repository = "dalek-cryptography/curve25519-dalek", branch = "master"}
-
 [dev-dependencies]
 sha2 = { version = "0.10", default-features = false }
 bincode = "1"
