@@ -1161,7 +1161,7 @@ impl EdwardsPoint {
     /// # Example
     ///
     /// ```
-    /// use curve25519_dalek::constants;
+    /// use noah_curve25519_dalek::constants;
     ///
     /// // Generator of the prime-order subgroup
     /// let P = constants::ED25519_BASEPOINT_POINT;
@@ -1191,7 +1191,7 @@ impl EdwardsPoint {
     /// # Example
     ///
     /// ```
-    /// use curve25519_dalek::constants;
+    /// use noah_curve25519_dalek::constants;
     ///
     /// // Generator of the prime-order subgroup
     /// let P = constants::ED25519_BASEPOINT_POINT;
